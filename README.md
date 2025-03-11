@@ -38,7 +38,7 @@ graph TD;
   RAG-->LLM;
   LLM-->GeneratedAnswer;
   GeneratedAnswer-->TextToSpeech;
-  TextToSpeech-->AudioOutput;
+  
 
 🚀 Installation & Setup
 
@@ -78,22 +78,12 @@ The system will retrieve relevant documents.
 
 It will generate a well-informed response.
 
-The response will be read out loud using TTS.
+
 
 ### 🎬 Demo
 
 
 
-###🔗 API Integration
-
-🔥 Hugging Face TTS Example
-
-from transformers import pipeline
-
-tts = pipeline("text-to-speech", model="facebook/mms-tts")
-audio = tts("Hello! How can I assist you today?")
-with open("output.wav", "wb") as f:
-    f.write(audio["audio"])
 
 #### 🏆 Future Improvements
 
